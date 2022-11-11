@@ -1,4 +1,6 @@
 #!/bin/bash
+
+
 SERVICE_URL=http://localhost:80
 
 # To Get Only status number (200)
