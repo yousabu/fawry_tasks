@@ -3,7 +3,7 @@
 MYOS=$(hostnamectl | awk '/Operating/ { print $3 }' )
 
 # Install On Centos and RHEL
-if [ $MYOS = "Centos" || "RHEL" ]
+if [[ $MYOS = "Centos" || "RHEL" ]]
 then
     echo Setup Docker Using Yum
     sudo yum update -y
@@ -27,7 +27,7 @@ echo Docker Up,Running On $MYOS.
 
 # Install On Ubuntu and debian
 
-if [ $MYOS = "Ubuntu" || "Debian" ]
+if [[ $MYOS = "Ubuntu" || "Debian" ]]
 then
     echo Setup Docker Using Apt
     sudo apt update -y
@@ -43,3 +43,12 @@ then
     sudo systemctl enable --now docker
     sudo systemctl start docker
 fi
+
+
+
+# Setup Compose
+git clone https://github.com/yousabu/Backup_local_container.git
+cd Backup_local_container
+docker-compose up -d
+
+echo Your Service Running on http://localhost:8083
