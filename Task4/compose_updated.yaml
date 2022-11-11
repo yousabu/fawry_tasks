@@ -1,0 +1,22 @@
+services:
+  back:
+    image: go
+    ports:
+    - 8080:80
+  data:
+    image: fedo
+    ports:
+    - 8080:80
+  front:
+    image: nginx
+    ports:
+    - 8080:80
+  proxy:
+    image: ubuntu
+    ports:
+    - 8080:80
+  web:
+    image: nginx
+    ports:
+    - 8080:80
+version: '3.9'

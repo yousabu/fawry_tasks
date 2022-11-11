@@ -1,0 +1,23 @@
+version: '3.9'
+services:
+  web:
+    image: nginx
+    ports:
+     - "8080:80"
+  front:
+    image: nginx
+    ports:
+     - "8080:80"
+  back:
+    image: nginx
+    ports:
+    - "8080:80"
+  data:
+    image: nginx
+    ports:
+    - "8080:80"
+  proxy:
+    image: nginx
+    ports:
+    - "8080:80"
+
