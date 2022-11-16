@@ -1,7 +1,7 @@
 #!/bin/bash
 
 CURRENT_BRANCH=$(git rev-parse --abbrev-ref HEAD)
-CHECKED_BRANCH="main"
+CHECKED_BRANCH="master"
 
 
 # Check The Correct Branch
