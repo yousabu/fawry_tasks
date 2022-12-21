@@ -13,4 +13,5 @@ docker build . -t $APP:$(date +"%d-%m-%y")
 docker login registry.gitlab.com -u <USER> -p <PASSWORD>
 docker push $APP:$(date +"%d-%m-%y")
 
+
 echo "Done"
