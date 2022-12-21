@@ -1,3 +1,3 @@
 #!bin/bash
 
-forsssssssssssssseeerfe
+for
